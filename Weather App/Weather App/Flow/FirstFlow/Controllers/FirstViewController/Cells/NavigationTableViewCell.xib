@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NavigationTableViewCell" rowHeight="74" id="GKa-C0-l0R" customClass="NavigationTableViewCell" customModule="Weather_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="74"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GKa-C0-l0R" id="SQL-mm-Pq1">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="74"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTW-Gz-ySY">
+                        <rect key="frame" x="16" y="16" width="382" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XGD-AM-4VE">
+                        <rect key="frame" x="16" y="46" width="382" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="XGD-AM-4VE" firstAttribute="leading" secondItem="SQL-mm-Pq1" secondAttribute="leading" constant="16" id="26X-WZ-bwp"/>
+                    <constraint firstItem="QTW-Gz-ySY" firstAttribute="leading" secondItem="SQL-mm-Pq1" secondAttribute="leading" constant="16" id="3dd-k4-blr"/>
+                    <constraint firstAttribute="bottom" secondItem="XGD-AM-4VE" secondAttribute="bottom" constant="16" id="60a-L8-t9W"/>
+                    <constraint firstAttribute="trailing" secondItem="QTW-Gz-ySY" secondAttribute="trailing" constant="16" id="QBI-U4-PVh"/>
+                    <constraint firstAttribute="trailing" secondItem="XGD-AM-4VE" secondAttribute="trailing" constant="16" id="SWc-lX-LzX"/>
+                    <constraint firstItem="QTW-Gz-ySY" firstAttribute="top" secondItem="SQL-mm-Pq1" secondAttribute="top" constant="16" id="WdN-wW-FOi"/>
+                    <constraint firstItem="XGD-AM-4VE" firstAttribute="top" secondItem="QTW-Gz-ySY" secondAttribute="bottom" constant="8" id="hNd-09-8JZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cityNameLabel" destination="QTW-Gz-ySY" id="FFB-PV-xxJ"/>
+                <outlet property="countryNameLabel" destination="XGD-AM-4VE" id="r3T-ly-nWj"/>
+            </connections>
+            <point key="canvasLocation" x="253.62318840579712" y="115.84821428571428"/>
+        </tableViewCell>
+    </objects>
+</document>
